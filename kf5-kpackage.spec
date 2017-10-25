@@ -5,7 +5,7 @@
 Summary:	Library to load and install packages as plugins
 Name:		kf5-%{kfname}
 Version:	5.39.0
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
@@ -64,6 +64,8 @@ cd build
 %install
 rm -rf $RPM_BUILD_ROOT
 
+install -d $RPM_BUILD_ROOT%{_libdir}/qt5/plugins/kpackage/packagestructure
+
 %{__make} -C build/ install \
         DESTDIR=$RPM_BUILD_ROOT
 
@@ -81,6 +83,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/kpackagetool5
 %attr(755,root,root) %ghost %{_libdir}/libKF5Package.so.5
 %attr(755,root,root) %{_libdir}/libKF5Package.so.*.*
+%dir %{_libdir}/qt5/plugins/kpackage
+%dir %{_libdir}/qt5/plugins/kpackage/packagestructure
 %{_mandir}/man1/kpackagetool5.1*
 %{_datadir}/kservicetypes5/kpackage-generic.desktop
 %{_datadir}/kservicetypes5/kpackage-genericqml.desktop
