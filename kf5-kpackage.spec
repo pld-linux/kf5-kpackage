@@ -1,15 +1,15 @@
-%define		kdeframever	5.65
+%define		kdeframever	5.67
 %define		qtver		5.9.0
 %define		kfname		kpackage
 
 Summary:	Library to load and install packages as plugins
 Name:		kf5-%{kfname}
-Version:	5.65.0
+Version:	5.67.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	4a2e85d3f406f54b8df4083c7ee64c9c
+# Source0-md5:	6bf9110d2c3746fdf0c70cc8451c3596
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5DBus-devel >= %{qtver}
