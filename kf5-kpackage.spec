@@ -1,5 +1,5 @@
 %define		kdeframever	5.86
-%define		qtver		5.14.0
+%define		qtver		5.15.2
 %define		kfname		kpackage
 
 Summary:	Library to load and install packages as plugins
@@ -14,7 +14,7 @@ URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5DBus-devel >= %{qtver}
 BuildRequires:	Qt5Test-devel >= %{qtver}
-BuildRequires:	cmake >= 3.5
+BuildRequires:	cmake >= 3.16
 BuildRequires:	gettext-devel
 BuildRequires:	kf5-extra-cmake-modules >= %{version}
 BuildRequires:	kf5-karchive-devel >= %{version}
