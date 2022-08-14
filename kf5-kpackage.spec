@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeframever	5.96
+%define		kdeframever	5.97
 %define		qtver		5.15.2
 %define		kfname		kpackage
 
 Summary:	Library to load and install packages as plugins
 Name:		kf5-%{kfname}
-Version:	5.96.0
+Version:	5.97.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	79c450825a7a83d7e8c559eb3f871277
+# Source0-md5:	d4f3946ac9544e80999ab436a27619dc
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5DBus-devel >= %{qtver}
